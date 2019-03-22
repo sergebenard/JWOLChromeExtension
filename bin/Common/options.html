@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WOL Context Search</title>
+    <!-- <style>
+        body {
+            min-width: 300px;
+            font-size: 15px;
+        }
+
+        input {
+            margin: 5px;
+            outline: none;
+        }
+    </style> -->
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body class="text-grey-dark">
+    <h2 class="text-grey-darker text-base font-light px-3 pt-5 pb-2">WOL Search</h2>
+    <div class="text-grey-dark font-light px-3 py-2 w-full">Selected the resources to search:</div>
+    <div class="flex px-2 py-2 w-full">
+        <button class="p-2 border border-grey-light text-grey rounded-l flex-1 bg-transparent
+                    hover:bg-grey hover:border-grey hover:text-grey-lightest"
+            type='submit'
+            value='Submit'
+            id='optionsAll'>
+                Select All
+            </button>
+        <button class="p-2 border-t border-r border-b border-grey-light text-grey rounded-r flex-1 bg-transparent
+                    hover:bg-grey hover:border-grey hover:text-grey-lightest"
+            type='submit'
+            value='Submit'
+            id='optionsNone'>
+                Select None
+            </button>
+    </div>
+    
+    <form id="form" class="px-3">
+    </form>
+    <div class="p-2">
+        <button class="px-2 py-4 border border-transparent text-grey rounded-r flex-1 bg-grey-lighter w-full font-bold
+                    hover:bg-grey-light hover:text-grey-darkest"
+            type='submit'
+            value='Submit'
+            id='optionsSubmit'>
+            Save
+        </button>
+    </div>
+    
+</body>
+<script src="resources_scopes.js"></script>
+<script src="options.js"></script>
+
+</html>
