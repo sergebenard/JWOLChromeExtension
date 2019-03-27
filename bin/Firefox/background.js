@@ -2,6 +2,13 @@
 
 'use strict';
 
+chrome.contextMenus.create({
+    id: 'openWOLSearchLink',
+    title: "Search WOL for '%s'",
+    type: 'normal',
+    contexts: ['selection'],
+});
+
 /**
   * Current search resources variable, as a constant
   * @type {array}
@@ -11,14 +18,14 @@ let searchResources = [];
 /**
  * Listener for when extension is first installed
  */
-chrome.runtime.onInstalled.addListener(function (searchResources) {
-    chrome.contextMenus.create({
-        id: 'openWOLSearchLink',
-        title: "Search WOL for '%s'",
-        type: 'normal',
-        contexts: ['selection'],
-    })
-});
+// chrome.runtime.onInstalled.addListener(function (searchResources) {
+//     chrome.contextMenus.create({
+//         id: 'openWOLSearchLink',
+//         title: "Search WOL for '%s'",
+//         type: 'normal',
+//         contexts: ['selection'],
+//     });
+// });
 
 /**
  * 

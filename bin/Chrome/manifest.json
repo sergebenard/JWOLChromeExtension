@@ -1,7 +1,7 @@
 {
     "name": "Watchtower Online Library Search - Unofficial",
     "description": "Use the context menu to search words on Watch Tower Library",
-    "version": "1.1",
+    "version": "1.1.1",
     "manifest_version": 2,
     "options_ui": {
         "page": "options.html"

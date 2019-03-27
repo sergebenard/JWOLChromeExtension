@@ -1,7 +1,7 @@
 {
     "name": "Watchtower Online Library Search - Unofficial",
     "description": "Use the context menu to search words on Watch Tower Library",
-    "version": "1.1",
+    "version": "1.1.1",
     "manifest_version": 2,
     "options_ui": {
         "page": "options.html"
@@ -9,6 +9,12 @@
     "applications": {
         "gecko": {
             "id": "serge.benard@gmail.com"
+        }
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "serge.benard@gmail.com",
+            "strict_min_version": "50.0"
         }
     },
     "permissions": [
